@@ -1,17 +1,16 @@
-import React from 'react';
-import './App.css';
-import Menu from './components/Menu';
-import Flag from './components/Flag';
-import { BrowserRouter, Route } from "react-router-dom";
+import React from "react";
+import "./App.css";
+import Menu from "./components/Menu";
+import Flag from "./components/Flag";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div>
       <Menu />
       <div className="main">
-        <Route path="/:id" render={Flag} />
+        <Flag />
       </div>
-    </BrowserRouter>
+    </div>
   );
 }
 
